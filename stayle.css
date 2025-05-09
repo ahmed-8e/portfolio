@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #d3d3d3;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    margin-bottom: 20px;
+}
+.logo{
+    color: #191970;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 29px;
+}
+.logo:hover{
+    color: #191980ad;
+}
+.nav a{
+    color: #191970;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+    padding-left: 30px;   
+}
+.nav a:hover{
+    color: #191980ad;
+}
+/* start section main  */
+section{
+    padding: 100px 200px;
+}
+.main{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background-image: url( logo.jpeg) ;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed ;
+}
+.main h2{
+    font-size: 30px;
+    color:#010129;
+}
+h2>span{
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 40px;
+    color: #d3d3d3;
+    letter-spacing: 1px;
+}
+.main h3{
+    font-size: 30px;
+    color:#010129;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.main-btn{
+    color: #d3d3d3;
+    text-decoration: none;
+    background-color:#010129;
+    border:5px solid #010129;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    transition: all .2s ease;
+}
+.main-btn:hover{
+    color: #d3d3d3;
+    border:5px solid  transparent;
+    background-color: #25346b;   
+}
+.main .social-icons{
+     margin-top: 30px; 
+}
+.main .social-icons a{
+    color: #d3d1d1;
+    padding: 0 5px;
+    margin-top: 10px;
+    font-size: 25px;
+    transition: all .2s ease;
+}
+.main .social-icons a:hover{
+    color:#010129;
+}
+/* end section main  */
+/* start section cards */
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #191970;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 340px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 20%);
+    border-radius: 10%;
+    padding: 60px; 
+    margin: 15px;
+    text-align: center;
+    transition: all .3s ease;
+}
+.card:hover{
+ transform: scale(1.1);
+}
+.icon{
+    font-size: 50px;
+    color:#2c408b;
+    margin-bottom: 10px;
+}
+.info h3{
+    margin-bottom: 20px;
+}
+.info p{
+    color:#2c408b;
+    line-height: 20px;
+}
+/* end section cards */ 
+/* start section project */
+.projects{
+    background-color: #220e3f;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    margin: 10px;
+    background-color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-image img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #191970 ;
+}
+/* end section project */
+/* start section contact */
+.contact .icon{
+    font-size: 35px;
+}
+.contact p{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* end section contact */
+.footer{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #220e3f;
+    padding: 30px;
+}
+.footer p{
+    color: #d3d3d3;
+    font-weight: 800;
+}
+.footer span{
+    color: #8a69d5;
+}
+.icons-footer a{
+    font-size: 25px;
+    padding: 0 5px;
+}
+.icons-footer a:hover{
+    color: #010129;
+}
+.icons-footer .a1{
+color: #25d366;
+}
+.icons-footer .a2{
+    color: #c13584;
+}
+.icons-footer .a3{
+    color: #0077b5;
+}
+.icons-footer .a4{
+    color: #0088cc;
+}
